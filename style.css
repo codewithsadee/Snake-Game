@@ -1,0 +1,30 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: #2e84ca;
+}
+
+#game-board {
+  background: #ffffff60;
+  width: 90vmin;
+  height: 90vmin;
+  display: grid;
+  grid-template-rows: repeat(41, 1fr);
+  grid-template-columns: repeat(41, 1fr);
+  border: 10px solid #28d8cfde;
+  backdrop-filter: blur(10px);
+}
+
+.snake {
+  background: #252525;
+  border-radius: 0.5vmin;
+  box-shadow: 0 0 3px #42424257;
+}
+.food {
+  background: radial-gradient(circle, #d0d31c 40%, #a8a8a800 70%);
+  border-radius: 100%;
+}
